@@ -46,6 +46,8 @@ button.addEventListener("click", () => {
 
 function performConversion(key) {
     if (key.key == "Enter") {
+        key.preventDefault();
+        
         const receivedData = getData();
         const conversion = convertTemperatures(receivedData);
         displayResult(conversion);
@@ -54,11 +56,15 @@ function performConversion(key) {
 
 function clearData(key) {
     if (key.key == "Escape") {
-        document.getElementById('number').value = "";
+        const inputNumber = document.getElementById('number');
+        const newHTML = document.getElementById('newHTML');
+
+        inputNumber.value = "";
         document.getElementById('InitialTemperature').value = "C";
         document.getElementById('FinalTemperature').value = "C";
-        const newHTML = document.getElementById('newHTML');
         newHTML.innerHTML = "";
+
+        inputNumber.focus();
     }
 }
 
