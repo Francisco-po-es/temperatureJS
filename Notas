@@ -1,0 +1,67 @@
+# Temperature Conversion App
+
+## Objective
+
+The objective of the project is to create calculator that is able to convert Celsius,
+Kelvin and Fahrenheit
+
+## General Requirements
+
+- [] The app should be able to go back and forth from any temperature of the three temperatures
+- [] The user should be able to input the starting temperature in an input field
+- [] The user should be able to change the starting and goal temperature units (F, C, K) using an HTML element, like a dropdown menu or a checkbox
+- [] The conversion should be triggered after clicking a button
+- [] Clicking the button to trigger the conversion should NOT clear the starting temperature input field
+- [] The conversion should be displayed in a separate, dynamically created HTML element
+- [] If invalid (non-int) characters are found in the input field, the conversion should not be triggered
+- [] Functions should be documented
+- [] Follow JS conventions
+- [] Use JS objects or classes to make the code look clean
+- [] Include 3 links to resources to learn about Celsius, Kelvin and Fahrenheit at the top of the page, after the header
+
+## CSS Requirements
+
+- [] Use flexbox only. No grid.
+- [] Content should be centred
+- [] Design some basic colour scheme and styling to give the webpage some personality
+
+## Optional
+
+- [] Pressing the esc key on the keyboard should reset all of the app
+- [] Pressing the enter key on the keyboard should also trigger the conversion
+
+## Notes
+
+- Remember to work on the CSS after you have done everything else. There is no point in trying to make things look pretty if they are useless
+- Focus on the  HTML layout first and then the script
+- You could also sketch your HTML layout on a piece of paper or your computer to visualise it and make it easier to work
+- Don't just write code. Think about what you want to do first and, as usual, write out the design
+
+
+/SOLUCIÓN
+
+//HTML
+
+- Crear título
+- Crear 3 textos, cada uno refiriéndose con una temperatura. Haciendo click, te envia a links que hablen sobre cada temperatura.
+- Luego, haremos la conversión:
+	- Puede ser todo dentro de un div (eso se verá).
+	- Comenzar con un texto "Quiero convertir... "
+	- Input donde la persona solamente ingresa números
+	- Elemento Select para elegir el tipo de temperatura
+	- Texto adjunto " a... "
+	- Otro elemento Select para elegir el tipo de temperatura para el resultado.
+- Agregar el botón 'Calcular'.
+- Agregar un div para poner el nuevo HTML generado por Javascript.
+
+
+//Javascript
+
+- Reconocer el input y los dos Select.
+- Mandar mensaje de error si la variable dentro del input no es un entero
+- Hacer la conversión real. Es decir, la ejecución de la operación
+	- Ir con un If o Case para cada alternativa
+- El resultado, debe generarse dentro de Javascript.
+- Investigar si el input se limpia después de presionar el botón. También, ver si este mismo recolecta información por cada presión.
+
+
